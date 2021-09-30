@@ -56,7 +56,7 @@ int xng_markdown_consume(char *text, XNGMarkdownParserCode token, yyscan_t scann
         self.codeFontName = @"Courier";
         self.linkFontName = self.paragraphFont.fontName;
         self.topAttributes = nil;
-        self.shouldParseLinks = YES;
+        self.shouldParseLinks = NO;
 
         XNGMarkdownParserHeader header = XNGMarkdownParserHeader1;
         for (CGFloat headerFontSize = 24; headerFontSize >= 14; headerFontSize -= 2, header++) {
